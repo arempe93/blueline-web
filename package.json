@@ -1,0 +1,67 @@
+{
+  "name": "blueline-web",
+  "version": "0.0.1",
+  "description": "",
+  "homepage": "https://github.com/arempe93/blueline-web",
+  "author": "Andrew Rempe <andrewrempe@gmail.com>",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/arempe93/blueline-web.git"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/arempe93/blueline-web/issues"
+  },
+  "scripts": {
+    "build": "npm run clean && npm run lint && webpack",
+    "clean": "rimraf dist",
+    "deploy": "npm run dist && gh-pages -d dist",
+    "dist": "npm run clean && npm run lint && NODE_ENV=production webpack --config webpack.config.production.js",
+    "lint": "standard lib/**/**",
+    "start": "npm run build && node server.js",
+    "start:devtools": "npm run build && DEVTOOLS=true node server.js"
+  },
+  "dependencies": {
+    "classnames": "~2.2.3",
+    "history": "~2.0.1",
+    "react": "~0.14.7",
+    "react-dom": "~0.14.7",
+    "react-router": "~2.0.0",
+    "redux": "~3.3.1",
+    "react-router-redux": "~4.0.0"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.4.0",
+    "babel-core": "^6.4.0",
+    "babel-eslint": "^5.0.0",
+    "babel-loader": "^6.2.1",
+    "babel-plugin-react-intl": "^2.0.0",
+    "babel-plugin-react-transform": "^2.0.0",
+    "babel-plugin-transform-decorators": "^6.4.0",
+    "babel-plugin-transform-runtime": "^6.4.0",
+    "babel-polyfill": "^6.3.14",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "babel-preset-stage-0": "^6.3.13",
+    "babel-runtime": "^6.3.19",
+    "css-loader": "^0.23.1",
+    "express": "^4.13.3",
+    "glob": "^7.0.0",
+    "html-webpack-plugin": "^2.9.0",
+    "mkdirp": "^0.5.1",
+    "node-sass": "^3.4.2",
+    "react-transform-catch-errors": "^1.0.1",
+    "react-transform-hmr": "^1.0.1",
+    "redbox-react": "^1.2.0",
+    "redux-devtools": "~3.1.1",
+    "redux-devtools-dock-monitor": "~1.1.0",
+    "redux-devtools-log-monitor": "~1.0.1",
+    "rimraf": "^2.5.0",
+    "sass-loader": "^3.1.2",
+    "standard": "^6.0.7",
+    "style-loader": "^0.13.0",
+    "webpack": "^1.12.10",
+    "webpack-dev-middleware": "^1.4.0",
+    "webpack-hot-middleware": "^2.6.0"
+  }
+}
