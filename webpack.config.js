@@ -7,7 +7,7 @@ module.exports = {
   entry: [
     'babel-polyfill',
     'webpack-hot-middleware/client',
-    './lib/index'
+    './lib/main'
   ],
   output: {
     filename: 'bundle.js',

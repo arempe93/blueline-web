@@ -13,7 +13,7 @@
     "url": "https://github.com/arempe93/blueline-web/issues"
   },
   "scripts": {
-    "build": "npm run clean && npm run lint && webpack",
+    "build": "npm run clean && webpack",
     "clean": "rimraf dist",
     "deploy": "npm run dist && gh-pages -d dist",
     "dist": "npm run clean && npm run lint && NODE_ENV=production webpack --config webpack.config.production.js",
@@ -48,6 +48,7 @@
     "express": "^4.13.3",
     "glob": "^7.0.0",
     "html-webpack-plugin": "^2.9.0",
+    "milligram-scss": "^1.0.0",
     "mkdirp": "^0.5.1",
     "node-sass": "^3.4.2",
     "react-transform-catch-errors": "^1.0.1",
