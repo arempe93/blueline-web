@@ -22,6 +22,7 @@
     "start:devtools": "npm run build && DEVTOOLS=true node server.js"
   },
   "dependencies": {
+    "axios": "~0.9.1",
     "classnames": "~2.2.3",
     "history": "~2.0.1",
     "react": "~0.14.7",
