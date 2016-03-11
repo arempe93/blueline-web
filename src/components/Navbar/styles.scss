@@ -1,15 +1,22 @@
-.navigation {
+@import '../../containers/App/styles/colors';
+
+$bar-height: 5.2rem;
+
+$item-size: 1.6rem;
+$item-spacing: 2.5rem;
+
+:local(.styles) {
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
 
-  height: 5.2rem;
+  height: $bar-height;
   max-width: 100vw;
 
   background-color: white;
 
-  border-bottom: 0.1rem solid #d0d5d8;
+  border-bottom: 0.1rem solid $border-gray;
 
   z-index: 100;
 
@@ -18,7 +25,7 @@
     padding-bottom: 0;
   }
 
-  .navigation-title {
+  .title {
     display: inline;
 
     position: relative;
@@ -26,15 +33,15 @@
     padding: 0;
 
     font-weight: 700;
-    font-size: 1.6rem;
+    font-size: $item-size;
 
     text-decoration: none;
-    line-height: 5.2rem;
+    line-height: $bar-height;
 
-    color: #192738;
+    color: $dark-primary;
   }
 
-  .navigation-list {
+  .list {
     padding: 0;
     margin: 0;
 
@@ -44,7 +51,7 @@
       position: relative;
 
       margin-bottom: 0;
-      margin-left: 2.5rem;
+      margin-left: $item-spacing;
 
       float: left;
 
@@ -53,12 +60,12 @@
 
         padding: 0;
 
-        font-size: 1.6rem;
+        font-size: $item-size;
 
-        line-height: 5.2rem;
+        line-height: $bar-height;
         text-decoration: none;
 
-        color: #192738;
+        color: $dark-primary;
       }
     }
   }

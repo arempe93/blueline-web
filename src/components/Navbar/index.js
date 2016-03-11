@@ -1,17 +1,17 @@
-import '../../assets/stylesheets/components/_navbar.scss'
-
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 
-export default class Navbar extends React.Component {
+import { styles } from './styles.scss'
+
+export default class Navbar extends Component {
   render () {
     return (
-      <nav className='navigation'>
+      <nav className={`${styles}`}>
         <div className='container'>
-          <Link to='/' className='navigation-title'>
+          <Link to='/' className='title'>
             Blueline
           </Link>
-          <ul className='navigation-list float-right'>
+          <ul className='list float-right'>
             <li>
               <Link to='/' className='link'>
                 Teams

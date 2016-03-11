@@ -1,17 +1,17 @@
-import '../../assets/stylesheets/components/_stats_banner.scss'
-
-import React from 'react'
+import React, { Component } from 'react'
 import { Link } from 'react-router'
 
 import * as axios from 'axios'
+
+import { styles } from './styles.scss'
 
 class StatsBanner extends React.Component {
   constructor (props) {
     super(props)
     this.state = {
-      players: 0,
-      stats: 0,
-      games: 0
+      players: 10,
+      stats: 20,
+      games: 30
     }
   }
 
@@ -24,7 +24,7 @@ class StatsBanner extends React.Component {
 
   render () {
     return (
-      <section className='banner'>
+      <section className={styles}>
         <div className='container'>
           <div className='row'>
             <div className='column stats'>

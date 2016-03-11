@@ -1,0 +1,13 @@
+@import '../../containers/App/styles/colors';
+
+:local(.styles) {
+  padding: 7.5rem 0;
+
+  text-align: center;
+
+  background-color: $primary;
+
+  h1, p {
+    color: white;
+  }
+}
