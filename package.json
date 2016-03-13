@@ -1,7 +1,7 @@
 {
-  "name": "redux-easy-boilerplate",
-  "version": "2.1.0",
-  "description": "Start your project easy and fast with modern tools",
+  "name": "blueline-web",
+  "version": "0.0.1",
+  "description": "A React interface to the Blueline stats api",
   "scripts": {
     "clean": "rimraf dist",
     "build": "webpack --progress --verbose --colors --display-error-details --config webpack/common.config.js",
@@ -12,30 +12,23 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/anorudes/redux-easy-boilerplate.git"
+    "url": "https://github.com/arempe93/blueline-web.git"
   },
-  "homepage": "http://anorudes.github.io/redux-easy-boilerplate/",
-  "bugs": "https://github.com/anorudes/redux-easy-boilerplate/issues",
+  "homepage": "https://github.com/arempe93/blueline-web",
+  "bugs": "https://github.com/arempe93/blueline-web/issues",
   "keywords": [
     "react",
     "reactjs",
     "babel6",
-    "boilerplate",
     "redux",
-    "hot",
-    "reload",
-    "hmr",
-    "live",
-    "edit",
     "webpack"
   ],
   "license": "MIT",
   "authors": [
-    "Max Anoru (https://github.com/anorudes)",
-    "Andrey Keske (https://github.com/keske)"
+    "Andrew Rempe"
   ],
   "contributors": [
-    "Ollipekka Jalonen (https://github.com/inertum)"
+    "Chris Celi"
   ],
   "devDependencies": {
     "autoprefixer": "6.3.1",
